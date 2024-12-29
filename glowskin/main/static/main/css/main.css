@@ -1,0 +1,149 @@
+body {
+    background: Honeydew;
+}
+
+aside{
+    float: left;
+    background: pink;
+    width: 25%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid Crimson;
+}
+
+aside img {
+    width: 290px;
+    float: left;
+}
+
+aside h3 {
+    margin-top: 50 px;
+    font-size: 30px;
+    color: Crimson;
+}
+
+
+
+aside ul { list-style: none; padding: 0 }
+
+aside ul li {
+    color: Azure;
+    display: block;
+    margin-top: 10px;
+    transition: transform .5s ease;
+}
+
+aside ul a {text-decoration: none;}
+
+aside ul li:hover, aside ul a:hover {
+    color: MediumSeaGreen;
+    transform: scale(1.1);
+}
+
+main .features{
+    float: left;
+    color: hotpink;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+.numbers{
+    float: left;
+    color: hotpink;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+.numbers h1 {font-size: 40px}
+.numbers p {max-width: 500px; margin: 20px auto}
+
+.numbers ul a { text-decoration: none }
+
+.numbers li {
+    color: hotpink;
+    display: block;
+    font-size: 20px;
+}
+
+.numbers li:hover {
+    color: MediumSeaGreen;
+    transform: scale(1.02);
+}
+
+main .numbers {
+    overflow: hidden;
+}
+
+form {
+     margin-left: 22%;
+     margin-right: 22%;
+     width: 500px
+     margin-top: 50px
+}
+
+.btn-info {
+    background: MediumSeaGreen
+}
+
+aside h3 {
+ margin-left: 40px
+}
+
+aside ul {
+ margin-left: 40px
+}
+
+.btn {
+    background-color: MediumSeaGreen; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Устанавливаем inline-block для кнопки */
+    font-size: 16px; /* Размер шрифта */
+    margin: 10px 2px; /* Отступы вокруг кнопки */
+    cursor: pointer; /* Указываем, что это кнопка */
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.btn:hover {
+    background-color: pink; /* Цвет фона при наведении */
+}
+
+.features .alert {
+    margin-bottom: 20px; /* Отступ снизу для разделения статей */
+    padding: 15px; /* Внутренние отступы для улучшения оформления */
+    border: 1px solid #ddd; /* Граница вокруг каждой статьи */
+    border-radius: 5px; /* Скругление углов */
+    background-color: #f9f9f9; /* Фоновый цвет для статей */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для выделения */
+}
+
+.features h1 {
+    margin-top: -80px; /* Уменьшите значение по своему усмотрению */
+    margin-bottom: 30px; /* Отступ снизу */
+    font-size: 2.5em; /* Увеличенный размер шрифта */
+}
+
+.alert a {
+    color: Hotpink; /* Цвет ссылок */
+    text-decoration: none; /* Убирает подчеркивание */
+    font-weight: bold; /* Жирный текст */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.alert a:hover {
+    /*color: #2980b9;  Цвет при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.features {
+    text-align: center; /* Центрирование текста */
+    margin-left: 200px; /* Автоматические отступы слева и справа */
+    max-width: 800px; /* Максимальная ширина блока */
+}

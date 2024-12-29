@@ -1,0 +1,33 @@
+{% extends 'main/loyal.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Самое актуальное здесь</h1>
+        {% if news %}
+            {%for el in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                    {% if el.id == 3 %}
+                        <a href ="https://blog.mann-ivanov-ferber.ru/2016/12/05/stan-luchshej-versiej-sebya-sokrashhennaya-programma-na-1-mesyac-vmesto-1-goda/" target="_blank"><p>{{ el.full_text }}</p></a>
+                    {% elif el.id == 2 %}
+                        <a href ="https://www.drogas.lv/ru/cosrx/b/SIM001" target="_blank"><p>{{ el.full_text }}</p></a>
+                    {% elif el.id == 1 %}
+                        <a href ="https://hollyshop.ru/catalog/product/vosstanavlivayushchiy_nabor_miniatyur_s_noni_celimax_the_real_noni_starter_kit_/reviews/" target="_blank"><p>{{ el.full_text }}</p></a>
+                    {% else %}
+                        <p>{{ el.full_text }}</p>
+                    {% endif %}
+
+                </div>
+            {% endfor %}
+
+        {% else %}
+            <P>Новостей нет(</P>
+        {% endif %}
+        <a href ="{% url 'create' %}"><i><button class="btn btn-info"><i class="fas fa-plus-circle" style="color:red;"></i> Добавить </button></i></a>
+
+        {# комментарий #}
+    </div>
+{% endblock %}
